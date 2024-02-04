@@ -1,0 +1,43 @@
+function generatequotes() {
+    var random = quotes[Math.floor(Math.random()*5)];
+    document.getElementById("display").innerHTML = random;
+}
+
+var quotes = [
+    "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+    "The only thing we have to fear is fear itself.",
+    "Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that.",
+    "Do one thing every day that scares you.",
+    "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.",
+    "It is during our darkest moments that we must focus to see the light.", 
+    "In the end, it's not the years in your life that count. It's the life in your years.", 
+    "Many of life's failures are people who did not realize how close they were to success when they gave up.", 
+    "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose.", 
+    "If you really look closely, most overnight successes took a long time.", 
+    "I find that the harder I work, the more luck I seem to have. ", 
+    "Be yourself; everyone else is already taken.", 
+    "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.", 
+    "Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.", 
+    "You know you're in love when you can't fall asleep because reality is finally better than your dreams.", 
+    "You only live once, but if you do it right, once is enough.", 
+    "In three words I can sum up everything I've learned about life: it goes on.", 
+    "If you tell the truth, you don't have to remember anything.",
+    "A friend is someone who knows all about you and still loves you.", 
+    "To live is the rarest thing in the world. Most people exist, that is all.", 
+    "We accept the love we think we deserve.", 
+    "It is better to be hated for what you are than to be loved for what you are not.", 
+    "The whole secret of a successful life is to find out what is one’s destiny to do, and then do it.", 
+    "In the depth of winter, I finally learned that within me there lay an invincible summer.", 
+    "You are the average of the five people you spend the most time with.", 
+    "Don't wish it were easier. Wish you were better.", 
+    "Motivation is what gets you started. Habit is what keeps you going.", 
+    "It is our choices, Harry, that show what we truly are, far more than our abilities.", 
+    "Yesterday is history, tomorrow is a mystery, today is a gift of God, which is why we call it the present.", 
+    "There is no secret ingredient.", 
+    "The man who does not read has no advantage over the man who cannot read.", 
+    "If you don't stand for something you will fall for anything.", 
+    "I may not have gone where I intended to go, but I think I have ended up where I needed to be.", 
+    "Never put off till tomorrow what may be done day after tomorrow just as well.", 
+    "For every minute you are angry you lose sixty seconds of happiness.", 
+    "Not all those who wander are lost.",
+];
