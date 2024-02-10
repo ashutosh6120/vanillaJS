@@ -7,6 +7,28 @@
     <title>Number Guessing Game</title>
 </head>
 <body>
+    <div class="container">
+        <div class="head1">
+            <h2>&#128290 Number Guessing Game &#128521</h2>
+        </div>
+        <div class="para">
+            <p>A Random Number is selected from 1 to 100. See If You Can Guess It? &#129300</p>
+        </div> 
+        <div class="form">
+            <label for="">Enter Your Guess: </label>
+            <input type="text" class="guessfield" id="guessid">
+            <button id="btn" class="d-block" onclick="checkGuess()">Submit Your Guess</button>
+
+        </div>
+        
+        <div class="resultParas">
+            <p >Previous Guesses: <span class="guesses"></span></p>
+            <p >Guesses Remaining: <span class="lastResult">10</span></p>
+            <p class="lowOrHi"></p>
+        </div>
+    
+
+    </div>
     
 
     <script src="app.js"></script>
