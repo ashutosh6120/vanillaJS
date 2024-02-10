@@ -44,4 +44,5 @@ async function callWeather(city){
 }
 btn.addEventListener("click", () => {
     callWeather(inputVal.value);
+    inputVal.value = '';
 })
