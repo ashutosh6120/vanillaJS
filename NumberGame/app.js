@@ -13,12 +13,13 @@ function checkGuess() {
     previousGuesses.push(userGuess);
     document.querySelector(".guesses").textContent = previousGuesses.join(", ");
     document.getElementById("guessid").value = "";
-    
+
 
     if (userGuess === randomNumber) {
         document.querySelector(".lowOrHi").textContent = "Correct! You are the winner!";
         document.querySelector(".lastResult").textContent = "0";
         document.getElementById("btn").disabled = true;
+        celebrate();
     } else {
         remainingGuesses--;
         document.querySelector(".lowOrHi").textContent = userGuess < randomNumber ? "You are too low!" : "You are too high!";
@@ -27,4 +28,16 @@ function checkGuess() {
             document.getElementById("btn").disabled = true;
         }
     }
+}
+
+function celebrate(){
+    confetti({
+        particleCount: 2000,
+        spread: 100, 
+        origin: { x: 0.5, y: 0.6 }, 
+        colors: ["#FFD700", "#FF6347", "#00FF00"],
+        shapes: ["square"],
+        scalar: 1.8, 
+        gravity: 0.5,
+    });
 }
