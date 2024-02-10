@@ -12,6 +12,8 @@ function checkGuess() {
 
     previousGuesses.push(userGuess);
     document.querySelector(".guesses").textContent = previousGuesses.join(", ");
+    document.getElementById("guessid").value = "";
+    
 
     if (userGuess === randomNumber) {
         document.querySelector(".lowOrHi").textContent = "Correct! You are the winner!";
