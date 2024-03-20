@@ -26,6 +26,13 @@ body {
 }
 
 
+body.dark {
+    --primary-color: #242526;
+    --white-color: #18191a;
+    --black-color: #fff;
+    --red-color: #e74c3c;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -106,6 +113,7 @@ body {
 
 
 .mode-switch {
+    cursor: pointer;
     padding: 10px 20px;
     border-radius: 8px;
     font-size: 22px;
